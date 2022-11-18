@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/Form.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" type="text/css">
+    <title>Form</title>
+</head>
+<body>
+    <!--Start Navbar-->
+    <div class="container">
+        <nav class="navbar">
+        <div class="col-4">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="logo" class="logo">
+        </div>
+        <div class="col-8">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="Landing page.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item dropbox px-3">
+                  <a onclick="dropbox()" class="nav-link dropdown-toggle" href="a" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                  <img class="profile" src="images/Profile.png" alt="profile">
+                  </a>
+                  <ul onclick="dropdown()" class="dropdown-menu dropdown-menu-lg-end dd-cont" aris-labelledby="navbardropdownnewlink" id="dropdown">
+                  <li><a class="dropdown-item" href="a"> <i class="bi bi-pencil-square"></i> Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="a"> <i class="bi bi-envelope"></i> Inbox</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="a"> <i class="bi bi door-open"></i> Logout </a></li> 
+                </ul>
+                </li>
+                </ul>
+        </div>
+        </nav>
+    </div>
+    <!--End of Navbar-->
+    
+    <!--Start of Login-->
+
+
+    <div class="container d-flex justify-content-center">
+        <form>
+            <div class="container">
+                <div class="col-md-12 text-center">
+                  <h1> POSTER MAKING CONTEST </h1>
+                </div>
+              </div>
+              <form action="/action_page.php">
+                <div class="mb-3 mt-4">
+                    <input type="text" class="form-field" id="name" placeholder="Full Name" name="name">
+                </div>
+                <div class="mb-3 mt-4">
+                    <input type="text" class="form-field" id="studid" placeholder="Student Number" name="studid">
+                </div>
+                <div class="mb-3 mt-3">
+                    <select class="form-field" id="cs" placeholder="Course" name="course">
+                        <option value="" disabled selected> Course</option>
+                        <option value="SF">BS in Information Technology (BSIT)</option>
+                        <option value="BA">BS Entrepreneur (BSE)</option>
+                        <option value="SB">BS Accountancy (BSA) </option>
+                      </select>
+                </div>
+                <div class="mb-3 mt-3">
+                    <select class="form-field">
+                        <option value="" disabled selected> Campus </option>
+                        <option value="SF">San Francisco</option>
+                        <option value="BA"> Batasan</option>
+                        <option value="SB"> San Bartolome</option>
+                      </select>
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-field" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="file" class="form-field" id="photo" placeholder="Upload your photo" name="photo">
+                </div>
+                <a href="#" class="col-4 btn btn-danger center"> <span class="text-bold"> CANCEL </span></a>
+                <a href="List.html" class="col-4 btn btn-warning center"> <span class="text-bold"> SUBMIT </span></a>
+                </form> 
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--End of Login-->
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

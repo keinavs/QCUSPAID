@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+:root{
+--orange: #F77F00;
+}
+*
+{
+    font-family: 'Inter', sans-serif;
+}
+h1{ 
+    font-weight: bold!important;
+    font-size: 42px;
+    color: var(--darkblue);
+}
+body {
+    text-align: center;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.profile{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+}
+.nav-link {
+    font-weight: bold !important;
+    font-size: 15px;
+}
+.line {
+    margin: auto;
+    width: 920px;
+    height: 4px;
+    border: 0;
+    background: var(--orange)
+}
+
+table {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid #cecfd5;
+    padding: 15px 285px;
+  }
+  th {
+    font-weight: bold;
+  }
