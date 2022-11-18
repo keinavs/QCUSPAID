@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css" type="text/css">
+    <title>DASHBOARD</title>
+    <style>
+        .border-cus{
+            background-color: #F67F00;
+            border: 0.2rem solid #F67F00;
+            border-radius: 1rem;
+        }
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+          }
+          
+          .flex-item {
+            background: tomato;
+            padding: 5px;
+            width: 5rem;
+            height: 150px;
+            margin: 2rem;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-content: center;
+          }
+    </style>
+</head>
+<body>
+    <!--Start Navbar-->
+    <div class="container">
+        <nav class="navbar">
+            <div class="col-5">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="logo" class="logo">
+                <strong class="text-body fs-4">QUEZON CITY UNIVERSITY</strong>
+            </div>
+            <div class="col-7 ">
+                <ul class="nav justify-content-end fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown text-body">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" width="50" height="50">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                            <a class="dropdown-item " href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>&nbsp;&nbsp; Edit Profile</a>
+                        </li>
+                            <li>
+                            <a class="dropdown-item" href="email.html"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                            </svg>&nbsp;&nbsp; Notification</a>
+                        </li>
+                            <li>
+                            <a class="dropdown-item text-danger" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-box-arrow-right text-danger" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>&nbsp;&nbsp; Logout</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--End of Navbar-->
+    <!--Start-->
+    <div class="container">
+        <div class="text-center">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="profile" class="card-img" style="width: 100px;"/>
+            <br />
+            <strong class="fs-1">Rod Vin</strong>
+        </div>
+        <div class="border-cus"></div>
+    </div>
+    <!--End-->
+    <!--Start-->
+    <div class="container">
+        <ul class="flex-container">
+            <li class="flex-item">
+                <i class="fa-solid fa-file-invoice">
+                    <h4>Course Curriculum</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-clipboard">
+                    <h4>Pre- Enrollment</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-regular fa-clock">
+                    <h4>Schedule</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-circle-down">
+                    <h4>Drop Subject</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-id-card">
+                    <h4>Library ID-CARD</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-calendar-days">
+                    <h4>QCU Calendar</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-table-list">
+                    <h4>Gradeslip</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-check">
+                    <h4>Curriculum Evaluation</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-regular fa-file-lines">
+                    <h4>Requested Documents</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-credit-card">
+                    <h4>Vaccination Record</h4>
+                </i>
+            </li>
+        </ul>
+    </div>
+    <!--End-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
