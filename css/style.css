@@ -1,0 +1,247 @@
+/*@import url(https://fonts.googleapis.com/css?family=Inter);*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
+
+*{
+    font-family: 'Inter';
+    margin: 0px;
+    padding: 0px
+}
+.color-1{
+  color: rgba(215, 39, 41, 1);
+}
+.color-2{
+  color: rgba(252, 191, 74, 1);
+}
+.color-3{
+  color: rgba(0, 102, 255, 1);
+}
+.color-4{
+  color: rgb(0, 47, 73, 1);
+}
+.qoute{
+  font-size: calc(5.5rem + 1vw);
+}
+
+.profile{
+    width: inherit;
+}
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+.login-container{
+    background-image: url(https://i.ibb.co/zRswhcb/Mask-group.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border: 4px solid #002F49;
+    box-shadow: -11px 11px 4px rgba(0, 0, 0, 0.25);   
+    border-radius: 73px 0px 73px 73px;
+    overflow: hidden;
+}
+.login-size{
+  width: 75%;
+  position: relative;
+}
+.login{
+    background-color: white;
+    width: 60%;
+    height: 30rem;
+}
+.sign-in{
+    font-size: 2.7rem;
+}
+.profile{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.welcome{
+    position: absolute;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    top: 5vh;
+    right: 2vw;
+}
+.vacine{
+    position: absolute;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    top: 5vh;
+    left: 2vw;
+}
+.student{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+}
+.btn-shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+}
+.btn-sub-1{
+    background: #FCBF4A;
+    color: #000;
+}
+.btn-sub-1:hover{
+    color: #fff;
+    background: #F67F00;
+}
+.btn-sub-2{
+    color: #fff;
+    background: #D72729;
+}
+.btn-sub-2:hover{
+    background: #D46A6B;
+    color: #ffffff;
+}
+.activate{
+    text-align: left !important;
+}
+a:hover{
+    color: gray !important;
+}
+.form-field{
+    width: 100%;
+    height: 48px !important;
+    padding: 10px;
+    border: 1px solid #000000 !important;
+    border-radius: 15px !important;
+    font-weight: 400 !important;
+}
+.acc-activation{
+    position: relative;
+    font-weight: 900;
+    font-size: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+/*Pre loader*/
+/*@import url(https://fonts.googleapis.com/css?family=Indie+Flower);*/
+
+.glass_hour {
+    position: absolute;
+    width: ;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-47%);
+}
+
+.glass_hour::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f251";
+  font-size: 45px;
+  display: inline-block;
+  animation:
+  spin 3s ease-out infinite,
+  tick 3s cubic-bezier(.8,0,.2,1) infinite;
+}
+
+@keyframes tick {
+ 100% {
+  content: "\f253";
+ }
+ 70% {
+  content: "\f252";
+ }
+ 0% {
+  content: "\f251";
+ }
+}
+
+@keyframes spin {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 90% {
+  transform: rotate(0deg);
+ }
+ 100% {
+  transform: rotate(-180deg);
+ }
+}
+
+.loader-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+@-moz-keyframes refreshing-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes refreshing-loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes refreshing-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* :not(:required) hides this rule from IE9 and below */
+.refreshing-loader:not(:required) {
+  -moz-animation: refreshing-loader 1000ms infinite linear;
+  -webkit-animation: refreshing-loader 1000ms infinite linear;
+  animation: refreshing-loader 1000ms infinite linear;
+  -moz-border-radius: 3.4em;
+  -webkit-border-radius: 3.4em;
+  border-radius: 3.4em;
+  border: 7px solid #000;
+  border-left-color: transparent;
+  color: transparent;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 5em;
+  height: 5em;
+  text-indent: 100%;
+  border-top: 7px dotted #000;
+}
+.refreshing-loader:not(:required):after {
+  display: block ;
+  border: 7px solid transparent;
+  border-top-color: #000;
+  border-left-color: #000;
+  content: '';
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin-left: 0em;
+  margin-top: 2em;
+}
+/*Pre loader*/

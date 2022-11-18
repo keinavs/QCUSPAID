@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+:root{
+  --darkblue: #003049;
+  --red: #D62828;
+  --orange: #F77F00;
+  --yellow: #FCBF49;
+  --lightyellow: #EAE2B7;
+}
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+h1{
+    font-weight: bold!important;
+    font-size: 42px;
+}
+body {
+    text-align: center;
+}
+/* --------------------Navigation----------------- */
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-top: 15px;
+    margin-right: 10em;
+}
+.nav-item{
+    font-weight: bold !important;
+}
+.nav-item:hover{
+    color: #808080 !important;
+}
+
+.card {
+    border-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    outline: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.line {
+    margin: auto;
+    width: 920px;
+    height: 4px;
+    border: 0;
+    background: var(--orange);
+}
+@media screen and (max-width: 760px) {
+  .card img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .line{
+    margin-left: 50px;
+    width: 630px;
+  }
+  h1{
+    font-weight: bold!important;
+    font-size: 25px;;
+  }
+  .navbar-toggler{
+    position: absolute;
+    right: -5px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.card img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.line{
+    margin-left: 50px;
+    width: 330px;
+  }
+h1{
+    font-weight: bold!important;
+    font-size: 25px;;
+  }
+.navbar-toggler{
+    position: absolute;
+    right: -65px;
+}
+}
+/*
+ * CARDS -------------------------------------------------
+ */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards_wrap{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(140px, 1Fr));
+    grid-gap: 2px;
+    justify-content: space-between;
+    flex-wrap: Wrap;
+}
+.cards_wrap .card_item {
+    padding: 15px 10px;
+    width: 20%;
+}
+
+.cards_wrap .card_inner img{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 35px 20px;
+    min-width: 220px;
+    min-height: 255px;
+    max-height: 200px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+  .cards_wrap{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 8px;
+    grid-template-areas: "card-item";
+  }
+  .wrapper .header{
+    font-size: 16px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 405px){
+  .cards_wrap{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 8px;
+    grid-template-areas: "card-item";
+  }
+}
+@media only screen and (max-width: 568px){
+  .cards_wrap .card_item{
+    width: 100%;
+  }
+  .wrapper .header{
+    font-size: 14px;
+  }
+}
+/* --------------------Table Styles----------------- */
+.table-border{
+    
+}
+
+.table-info{
+    border-spacing: 2; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    max-width:800px; 
+    width:100%;
+    margin: 25px auto;
+    position:relative;
+}
+td,th{ 
+    padding-left: 25px;
+    text-align: center;
+}
+thead tr { 
+    height:60px;
+    background:var(--yellow);
+    font-size:16px;
+}
+  tbody tr {
+    height:48px;
+    border-bottom:1px solid #E3F1D5 ;
+}
+&:last-child  {
+ border:0; 
+}
+td,th  { 
+    text-align:left; }
+&.l { 
+    text-align:right }
+&.c { 
+    text-align:center }
+&.r { 
+    text-align:center }
+
+.btn, .btncan{
+    background-color: var(--red);
+    color: #fff;
+    margin: 5% 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    border-bottom: .15em solid grey;
+    border-radius: 10px;
+    padding: 8px 65px;
+}
+.btnsub {
+    background-color: var(--orange);
+}
+.btnbtm:hover {
+    background-color: var(--yellow) !important;
+}
+/* --------------------Resposive------------------- */
+
+/* --------------------Resposive------------------- */
+

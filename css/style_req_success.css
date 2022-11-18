@@ -1,0 +1,106 @@
+* {
+    font: 'Inter', sans-serif;
+      margin: 0;
+  }
+  
+  
+  /* -----------------------NAVIGATION BAR------------------------ */
+  
+  ul {
+      position: sticky;
+      top: 0;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      /* padding-top: 20px; */
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+      height: 100px;
+      font: 20px 'Inter', sans-serif;
+    }
+    
+    li {
+      float: right ;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(37, 37, 37);
+      text-align: center;
+      padding: 20px 40px;
+      margin: 20px 0;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: rgb(236, 236, 236);
+      transition: 1s;
+    }
+  
+    ul img {
+      width: 90px;
+      height: 90px;
+      float: left;
+      padding-left: 20px;
+    }
+  
+  /* ------------------------END OF NAVIGATION BAR STYLE--------------------- */
+  
+  
+  /* ----------------------CONTAINER----------------------------- */
+  
+  
+  div.main {
+    /* border: 3px solid #000; */
+    padding: 20px;
+    padding-left: 0;
+    padding-top: 0;
+    width: 70%;
+    margin: auto;
+    height: 500px;
+    border-radius: 0 50px 50px 50px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px 0px #0000004F;
+    font: 18px 'Inter', sans-serif;
+
+    background-color: #D62828;
+  }
+
+  .main .success section {
+    margin: auto;
+    padding: 30px;
+    height: 80%;
+  }
+
+  .main .success section label{
+    font: 900 48px 'Inter', sans-serif;
+    text-align: left;
+
+    color: #fff;
+    line-height: 84px;
+  }
+
+  .main .success section p{
+    color: #fff;
+    font: 400 24px 'Inter', sans-serif;
+    line-height: 29px;
+    align-items: center;
+
+    text-align: center;
+  }
+
+.main a{
+    text-decoration: none;
+    font: 400 18px 'Inter', sans-serif;
+    color: #000;
+    float: right; 
+    padding: 10px 50px;
+
+    background-color: #FCBF4A;
+    box-shadow: 4px 4px 4px #b8b8b8;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    
+  }

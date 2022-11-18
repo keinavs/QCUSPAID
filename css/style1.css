@@ -1,0 +1,236 @@
+* {
+    font: 'Inter', sans-serif !important;
+    margin: 0;
+}
+
+/* navbar */
+nav {
+    font: 400 24px 'Inter', sans-serif;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    padding: 0%;
+}
+
+.fa-solid {
+  height: 1rem !important;
+  width: 1rem !important;
+}
+
+/* ---------form---------- */
+
+.main {
+    padding: 20px;
+    padding-left: 0;
+    padding-top: 0;
+    width: 85%;
+    margin: auto;
+    height: 500px;
+    border-radius: 0 50px 50px 50px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px 0px #0000004F;
+    font: 18px 'Inter', sans-serif;
+  }
+
+.main form{
+    transition: 0.5s;
+}
+
+  .data{
+    width: 40%;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .data1{
+    width: 56%;
+    float: left;
+    height: 600px;  
+    margin: 20px;
+    margin-top: 0;
+    transition: 0.5s;
+  } 
+
+/* -----------instruction----------- */
+
+  .instruction{
+    width: 100%;
+    height: 600px;
+    background-color: #002F49;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .instruction section {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    transition: 0.5s;
+  }
+  
+  .instruction section label{
+    font: 900 40px 'Inter', sans-serif;
+    text-align: center;
+    color: #fff;
+    line-height: 84px;
+  }
+  
+  .instruction section p{
+    color: #fff;
+    font: 600 24px;
+    line-height: 29px;
+  }
+  
+  .instruction section i {
+    font-style: italic;
+  }
+
+  .stepone {
+    position: absolute !important;
+    left: 0;
+    transition: 0.5s;
+  }
+  .steptwo{
+    position: absolute !important;
+    left: 450px;
+    transition: 0.5s;
+  }
+
+  .form1 {
+    /* position: absolute; */
+    left: 0;
+    transition: 0.5s;
+  }
+  .form2{
+    position: relative;
+    left: 800px;
+    top: -400px;
+    transition: 0.5s;
+  }
+/* ----------inputs---------- */
+
+
+.form-select, .form-control {
+    border: 2px solid #b8b8b8  !important;
+    font-size: 1rem  !important;
+    transition: 0.5s;
+
+}
+
+  .input section{
+    margin: auto;
+    padding: 30px;
+    transition: 0.5s;
+  }
+  
+  .input section p{
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .input section .next{
+    text-decoration: none;
+    font: 400 18px 'Inter', sans-serif;
+    color: #002F49;
+    float: right; 
+    padding: 10px 50px;
+    background-color: #FCBF4A;
+    box-shadow: 4px 4px 4px #b8b8b8;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .input section .next:hover {
+    background-color: #f77f00;
+    color: #fff;
+  }
+  
+  .input section .backbtn{
+    text-decoration: none;
+    font: 400 18px 'Inter', sans-serif;
+    color: #fff;
+    float: left; 
+    padding: 10px 50px;
+    background-color: #D72729;
+    box-shadow: 4px 4px 4px #b8b8b8;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* -------request success--------- */
+
+  .last {
+    width: 80%;
+    height: 550px;
+    border-radius: 0 50px 50px 50px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px 0px #0000004F;
+    font: 18px 'Inter', sans-serif;
+    background-color: #002F49;
+  }
+
+  .last .success section {
+    margin: auto;
+    padding: 30px;
+    height: 80%;
+  }
+
+  .last .success section label{
+    font: 900 48px 'Inter', sans-serif;
+    text-align: left;
+
+    color: #fff;
+    line-height: 84px;
+  }
+
+  .last .success section p{
+    color: #fff;
+    font: 400 24px 'Inter', sans-serif;
+    line-height: 29px;
+    align-items: center;
+
+    text-align: center;
+  }
+
+.last .confirm{
+    text-decoration: none;
+    font: 400 18px 'Inter', sans-serif;
+    color: #002F49;
+    float: right; 
+    padding: 10px 50px;
+    background-color: #FCBF4A;
+    box-shadow: 4px 4px 4px #1e1e1e;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    align-items: center;
+  }
+
+.confirm:hover {
+  background-color: #f77f00;
+  color: #fff;
+}
+
+
+
+/* ------------FAQs--------------- */
+
+p {
+  font-size: 20px;
+}
+
+.accordion-button {
+  font: 400 20px 'Inter', sans-serif;
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
+}
