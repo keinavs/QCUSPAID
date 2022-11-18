@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.css" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+        <!--Start Navbar-->
+        <div class="container">
+            <nav class="navbar">
+            <div class="col-4">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="logo" class="logo">
+                <strong class="text-white fs-5">QUEZON CITY UNIVERSITY</strong>
+            </div>
+            <div class="col-8">
+                <ul class="nav justify-content-end fw-bolder ">
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+        <!--End of Navbar-->
+    
+    <!--Start of Login-->
+    <div class="container d-flex justify-content-center">
+        <div class="login-container login-size">
+            <span class="welcome">Welcome back!</span>
+            <div class="login d-flex justify-content-center align-middle">
+                <form action="" class="text-center justify-content-center " style="display: flex; width: 400px; flex-direction: column; position: relative">
+                    <div class="mt-3">
+                        <strong class="sign-in">Sign in to Account</strong>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Student Number">
+                    </div>
+                    <div class="mt-3">
+                        <input type="password" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Password">
+                        <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
+                    </div>
+                    <div class="mt-3 text-sm-start">
+                        <button type="submit" class="btn btn-sub-1 btn-shadow input-group" id="success"><strong>SIGN IN</strong></button>
+                        <span class="activate">Account not yet activated?</span><a href="#" class="text-decoration-none text-body fw-bolder" data-bs-toggle="modal" data-bs-target="#myModal">Click here.</a>
+                    </div>
+                </form>
+            </div>
+            <img src="https://i.ibb.co/FYz2tkc/Untitled-design-1-1.png" alt="Student" class="student">
+        </div>
+    </div>
+    <!--End of Login-->
+    
+        <!-- Start of Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg text-center">
+        <div class="modal-content"  style="padding: 20px;">
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="modal-title">
+                <span class="acc-activation">Request Account Activation</span>
+            </div>          
+            <form action="login.html">
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-field" id="name" placeholder="Full Name" name="name" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-field" id="studid" placeholder="Student Number" name="studid" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-field" id="cs" placeholder="Course and Section" name="cs" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="dropdown" class="form-field" id="campus" placeholder="Campus" name="campus" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-field" id="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <button type="button" class="btn btn-sub-2 btn-lg btn-shadow input-group" data-bs-dismiss="modal"><span class="fw-bolder">CANCLE</span></button>
+                    </div>
+                    <div class="col">
+                    <button type="submit" class="btn btn-sub-1 btn-lg btn-shadow input-group" id="success"><span class="fw-bolder">SUBMIT</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--End of Modal Body-->
+      </div>
+    </div>
+  </div>
+      <!--End of Modal-->
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+</html>
